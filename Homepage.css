@@ -1,0 +1,309 @@
+body {
+  color: #93A1A7;
+  font-family: 'Lato', sans-serif; }
+
+.header {
+  height: 50px;
+  background-color: #E5EFF1; }
+  .header p {
+    padding: 15px;
+    font-size: 12.5px;
+    float: right; }
+    .header p i {
+      padding-right: 9px; }
+    .header p:first-child {
+      float: left; }
+    .header p:last-child {
+      border-right: 1px solid #D9E3E5; }
+
+.navbar {
+  background-color: #FFFFFF;
+  color: #93A1A7;
+  height: 76px;
+  margin: 0;
+  padding: 0; }
+  .navbar ul {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    margin-top: 5px; }
+    .navbar ul li:last-child {
+      background-color: #29C2E1;
+      border-radius: 50px 55px;
+      background-size: 141px 38px;
+      margin-top: 8px; }
+      .navbar ul li:last-child a {
+        line-height: 0.5;
+        padding-right: 25px;
+        padding-left: 25px; }
+        .navbar ul li:last-child a:last-child {
+          color: white; }
+
+.main {
+  color: white;
+  height: 750px auto;
+  background-color: #8D8D8D;
+  text-align: center; }
+  .main .circle1 {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-left: 49.25%;
+    margin-top: 150px; }
+    .main .circle1 p {
+      transform: translate(0px, -5px); }
+  .main .triangle {
+    width: 0;
+    height: 0;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid white;
+    margin-left: 20px;
+    -ms-transform: translate(7px, 0px);
+    /* IE 9 */
+    -webkit-transform: translate(7px, 0px);
+    /* Safari */
+    transform: translate(7px, 0px); }
+  .main .circle2 {
+    height: 15px;
+    width: 15px;
+    border: 3px solid #B1B1B1;
+    border-radius: 50%;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 43px; }
+    .main .circle2:hover {
+      border: 3px solid white; }
+    .main .circle2:first-child {
+      margin-left: 47.5%; }
+    .main .circle2:last-child {
+      border: 3px solid white; }
+  .main div p:first-child {
+    font-size: 25px;
+    margin-top: 217px;
+    margin-bottom: 40px; }
+  .main div p:last-child {
+    font-size: 15px; }
+  .main div h1 {
+    font-size: 50px; }
+
+.startup {
+  height: 656px auto;
+  color: black; }
+  .startup h1:last-child {
+    color: white;
+    font-size: 18px; }
+  .startup h1:first-child {
+    margin-top: 100px;
+    font-size: 30px; }
+  .startup h4 {
+    margin-bottom: 22px; }
+  .startup p {
+    margin-bottom: 43px;
+    font-size: 14px; }
+  .startup .startup1 {
+    height: 301px;
+    width: 585px;
+    background-color: #8D8D8D;
+    margin-top: 13px; }
+    .startup .startup1 h1 {
+      text-align: center;
+      transform: translate(0, 0); }
+  .startup .service {
+    margin-top: 100px; }
+    .startup .service .moreservice {
+      width: 172px;
+      height: 38px; }
+      .startup .service .moreservice p {
+        text-align: center;
+        font-size: 15px;
+        background-color: #29C2E1;
+        color: white;
+        border-radius: 50px 50px;
+        padding: 10px 0px 10px 0px;
+        text-decoration: none; }
+        .startup .service .moreservice p:hover {
+          text-decoration: none; }
+    .startup .service div:nth-child(2) {
+      margin-top: -81px; }
+    .startup .service div:nth-child(3) {
+      margin-top: -61px; }
+    .startup .service div h3 {
+      display: block;
+      text-size: 30px;
+      transform: translate(95px, -92px); }
+    .startup .service p {
+      display: block;
+      transform: translate(96px, -93px); }
+
+.client {
+  height: 467px auto;
+  background-color: #E5EFF1;
+  margin-top: -13px; }
+  .client .bigcircle1 {
+    height: 132px;
+    width: 132px;
+    border-radius: 50%;
+    float: right;
+    display: block;
+    background-color: #8D8D8D;
+    margin-top: 197px; }
+    .client .bigcircle1 p {
+      text-align: center;
+      color: white;
+      padding-top: 45px; }
+    .client .bigcircle1:last-child {
+      background-color: #F79B38; }
+  .client .littlecircle {
+    margin-top: 250px;
+    float: right;
+    padding-top: 50px;
+    transform: translate(100px, 50px); }
+    .client .littlecircle .littlecircle1 {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: #8D8D8D; }
+      .client .littlecircle .littlecircle1:first-child {
+        background-color: #29C2E1;
+        display: inline-block; }
+
+.features {
+  color: black;
+  height: 662px auto;
+  border-bottom: 1px solid #E5EEF0; }
+  .features .morefeatures {
+    margin-top: 62px;
+    margin-left: 40%;
+    text-align: center;
+    float: center;
+    width: 200px;
+    height: 38px; }
+    .features .morefeatures p {
+      text-align: center;
+      font-size: 15px;
+      background-color: #29C2E1;
+      color: white;
+      border-radius: 50px 50px;
+      padding: 10px 0px 10px 0px;
+      text-decoration: none; }
+      .features .morefeatures p:hover {
+        text-decoration: none; }
+  .features .triangleblue {
+    width: 0;
+    height: 0;
+    margin-top: -110px;
+    margin-left: 87%;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    border-top: 110px solid transparent;
+    border-bottom: 110px solid #F79B38; }
+  .features .triangleyellow {
+    width: 0;
+    height: 0;
+    margin-top: -150px;
+    margin-left: 81%;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid #29C2E1; }
+
+.pricing {
+  height: 713px auto;
+  color: black; }
+  .pricing .boxes .qutu {
+    position: relative;
+    padding: 0;
+    height: 422px;
+    border: 1px solid #E5EEF0; }
+    .pricing .boxes .qutu img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -3; }
+    .pricing .boxes .qutu .startnow {
+      background-color: #29C2E1;
+      border-radius: 50px 50px;
+      text-align: center;
+      font-size: 15px;
+      color: white;
+      padding: 8px 0px 0.1px 0px;
+      width: 141px;
+      margin: 0 auto; }
+    .pricing .boxes .qutu:last-child {
+      margin-right: 0; }
+    .pricing .boxes .qutu h5 {
+      border-bottom: 1px solid #E5EEF0; }
+    .pricing .boxes .qutu h2 {
+      z-index: 2;
+      border-bottom: 1px solid #E5EEF0; }
+    .pricing .boxes .qutu:hover {
+      box-shadow: 5px 5px 5px #888888; }
+
+.team {
+  height: 682px;
+  background-color: #E5EFF1;
+  color: black; }
+  .team .teamboxes .teambox {
+    margin-bottom: 98px;
+    background-color: white;
+    height: 398px; }
+    .team .teamboxes .teambox:hover {
+      box-shadow: 5px 5px 5px #888888; }
+    .team .teamboxes .teambox p {
+      color: #F79B38; }
+    .team .teamboxes .teambox div {
+      height: 276px;
+      background-color: #93A1A7; }
+      .team .teamboxes .teambox div h4 {
+        text-align: center;
+        color: white; }
+
+.freeservice {
+  height: 316px;
+  color: black;
+  border-bottom: 1px solid #E5EEF0; }
+  .freeservice h1, .freeservice h4 {
+    text-align: center; }
+  .freeservice .button {
+    height: 38px;
+    float: center;
+    margin-top: 33px; }
+    .freeservice .button p {
+      padding: 10px 20px;
+      text-align: center;
+      display: inline; }
+      .freeservice .button p:hover {
+        box-shadow: 1px 1px 1px #888888; }
+      .freeservice .button p:first-child {
+        padding: 10px 40px;
+        margin-left: 38%;
+        border-radius: 50px 50px;
+        background-color: #F79B38;
+        color: white;
+        text-align: center; }
+      .freeservice .button p:last-child {
+        margin-left: 2%;
+        border-radius: 50px 50px;
+        background-color: #29C2E1;
+        color: white;
+        text-align: center; }
+
+.contact {
+  border-bottom: 1px solid #E5EEF0;
+  height: 317px auto; }
+  .contact .col-md-2, .contact .col-md-3 {
+    margin-bottom: 85px;
+    margin-top: 75px; }
+  .contact h4 {
+    color: black; }
+
+.footer {
+  height: 107px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 12px; }
+
+/*# sourceMappingURL=Homepage.css.map */
