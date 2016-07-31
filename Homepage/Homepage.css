@@ -22,6 +22,9 @@ body {
   height: 76px;
   margin: 0;
   padding: 0; }
+  .navbar img {
+    float: left;
+    transform: translate(-955%, 0px); }
   .navbar ul {
     float: right;
     padding-top: 10px;
@@ -32,6 +35,8 @@ body {
       border-radius: 50px 55px;
       background-size: 141px 38px;
       margin-top: 8px; }
+      .navbar ul li:last-child:hover {
+        box-shadow: 0px 0px 10px #888888; }
       .navbar ul li:last-child a {
         line-height: 0.5;
         padding-right: 25px;
@@ -125,7 +130,8 @@ body {
         padding: 10px 0px 10px 0px;
         text-decoration: none; }
         .startup .service .moreservice p:hover {
-          text-decoration: none; }
+          text-decoration: none;
+          box-shadow: 0px 0px 20px #888888; }
     .startup .service div:nth-child(2) {
       margin-top: -81px; }
     .startup .service div:nth-child(3) {
@@ -139,41 +145,41 @@ body {
       transform: translate(96px, -93px); }
 
 .client {
-  height: 467px auto;
+  height: 468px auto;
   background-color: #E5EFF1;
-  margin-top: -13px; }
-  .client .bigcircle1 {
-    height: 132px;
-    width: 132px;
-    border-radius: 50%;
-    float: right;
-    display: block;
-    background-color: #8D8D8D;
-    margin-top: 197px; }
-    .client .bigcircle1 p {
-      text-align: center;
-      color: white;
-      padding-top: 45px; }
-    .client .bigcircle1:last-child {
-      background-color: #F79B38; }
+  margin-top: -13px;
+  color: black; }
+  .client h5 {
+    color: #F79B38;
+    margin-top: -10px; }
+  .client p {
+    margin-top: -15px; }
+  .client h3 {
+    margin-bottom: 58px; }
+  .client .col-md-6 {
+    margin-top: 70px; }
+    .client .col-md-6 .col-md-10 p {
+      font-family: 'Lobster Two', cursive; }
+  .client .bigcircle {
+    background-color: red;
+    margin-top: 97px; }
+    .client .bigcircle .bigcircle1 {
+      float: left;
+      padding-right: 30px;
+      margin-bottom: 108px; }
   .client .littlecircle {
-    margin-top: 250px;
-    float: right;
-    padding-top: 50px;
-    transform: translate(100px, 50px); }
+    margin-right: 10px; }
     .client .littlecircle .littlecircle1 {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: #8D8D8D; }
-      .client .littlecircle .littlecircle1:first-child {
-        background-color: #29C2E1;
-        display: inline-block; }
+      margin: 0 auto;
+      float: left;
+      text-align: center;
+      transform: translate(15px, 10px); }
 
 .features {
   color: black;
   height: 662px auto;
-  border-bottom: 1px solid #E5EEF0; }
+  border-bottom: 1px solid #E5EEF0;
+  padding-top: 72px; }
   .features .morefeatures {
     margin-top: 62px;
     margin-left: 40%;
@@ -190,7 +196,8 @@ body {
       padding: 10px 0px 10px 0px;
       text-decoration: none; }
       .features .morefeatures p:hover {
-        text-decoration: none; }
+        text-decoration: none;
+        box-shadow: 0px 0px 20px #888888; }
   .features .triangleblue {
     width: 0;
     height: 0;
@@ -212,17 +219,34 @@ body {
 
 .pricing {
   height: 713px auto;
-  color: black; }
+  color: black;
+  padding-top: 72px; }
   .pricing .boxes .qutu {
+    margin-bottom: 99px;
     position: relative;
     padding: 0;
+    margin-top: 30px;
     height: 422px;
-    border: 1px solid #E5EEF0; }
+    border: 1.3px solid #E5EEF0; }
+    .pricing .boxes .qutu .clientmanagement {
+      padding-bottom: 48px; }
+    .pricing .boxes .qutu span {
+      border-bottom: 1px solid #F79B38;
+      padding-bottom: 6px; }
+    .pricing .boxes .qutu h5 {
+      padding: 10px 0px 15px 0px;
+      font-size: 19px;
+      color: #93A1A7; }
+    .pricing .boxes .qutu p {
+      color: #93A1A7;
+      font-size: 15px; }
+      .pricing .boxes .qutu p:last-child {
+        color: white; }
     .pricing .boxes .qutu img {
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -3; }
+      z-index: 100; }
     .pricing .boxes .qutu .startnow {
       background-color: #29C2E1;
       border-radius: 50px 50px;
@@ -235,48 +259,70 @@ body {
     .pricing .boxes .qutu:last-child {
       margin-right: 0; }
     .pricing .boxes .qutu h5 {
-      border-bottom: 1px solid #E5EEF0; }
-    .pricing .boxes .qutu h2 {
+      border-bottom: 1px solid #E5EEF0;
+      z-index: 100; }
+    .pricing .boxes .qutu h3 {
       z-index: 2;
-      border-bottom: 1px solid #E5EEF0; }
+      border-bottom: 1px solid #E5EEF0;
+      padding-bottom: 7px;
+      font-size: 20px;
+      font-weight: bold; }
     .pricing .boxes .qutu:hover {
-      box-shadow: 5px 5px 5px #888888; }
+      box-shadow: 0px 0px 20px #888888; }
 
 .team {
-  height: 682px;
+  height: 682px auto;
   background-color: #E5EFF1;
-  color: black; }
+  color: black;
+  padding-top: 72px; }
   .team .teamboxes .teambox {
     margin-bottom: 98px;
     background-color: white;
     height: 398px; }
     .team .teamboxes .teambox:hover {
-      box-shadow: 5px 5px 5px #888888; }
+      box-shadow: 0px 0px 20px #888888; }
     .team .teamboxes .teambox p {
-      color: #F79B38; }
+      color: #F79B38;
+      padding-left: 30px;
+      margin: 0;
+      margin-bottom: -17px; }
+    .team .teamboxes .teambox h5 {
+      padding-left: 30px;
+      padding-top: 19px;
+      margin: 0;
+      margin-bottom: -17px; }
+    .team .teamboxes .teambox img {
+      padding-left: 30px; }
     .team .teamboxes .teambox div {
       height: 276px;
       background-color: #93A1A7; }
       .team .teamboxes .teambox div h4 {
         text-align: center;
-        color: white; }
+        color: white;
+        padding-top: 121px; }
 
 .freeservice {
-  height: 316px;
+  height: 316px auto;
   color: black;
-  border-bottom: 1px solid #E5EEF0; }
+  border-bottom: 1px solid #E5EEF0;
+  margin-top: 72px; }
+  .freeservice span {
+    color: #F79B38; }
   .freeservice h1, .freeservice h4 {
     text-align: center; }
+  .freeservice a {
+    color: white; }
   .freeservice .button {
     height: 38px;
     float: center;
-    margin-top: 33px; }
+    margin-top: 33px;
+    margin-bottom: 79px; }
     .freeservice .button p {
       padding: 10px 20px;
       text-align: center;
       display: inline; }
       .freeservice .button p:hover {
-        box-shadow: 1px 1px 1px #888888; }
+        box-shadow: 0px 0px 10px #888888; }
       .freeservice .button p:first-child {
         padding: 10px 40px;
         margin-left: 38%;
@@ -292,9 +338,18 @@ body {
         text-align: center; }
 
 .contact {
+  padding: 0;
   border-bottom: 1px solid #E5EEF0;
+  position: relative;
   height: 317px auto; }
+  .contact .tricontactyellow {
+    position: absolute;
+    margin-top: 87px;
+    z-index: -2; }
+  .contact input {
+    padding: 8px 60px 10px 0px; }
   .contact .col-md-2, .contact .col-md-3 {
+    z-index: 20;
     margin-bottom: 85px;
     margin-top: 75px; }
   .contact h4 {
@@ -304,6 +359,12 @@ body {
   height: 107px;
   text-align: center;
   font-size: 14px;
-  margin-top: 12px; }
+  margin-top: 12px;
+  padding: 0;
+  position: relative; }
+  .footer img {
+    text-align: right;
+    float: right;
+    margin-top: -240px; }
 
 /*# sourceMappingURL=Homepage.css.map */

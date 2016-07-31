@@ -34,6 +34,10 @@ body{
 	height:76px;
 	margin:0;
 	padding:0;
+	img{
+		float: left;
+		transform: translate(-955%, 0px)
+	}
 	ul{
 		float: right;
 		padding-top:10px;
@@ -44,6 +48,8 @@ body{
 			border-radius:50px 55px;
 			background-size:141px 38px;
 			margin-top: 8px;
+			&:hover{
+			box-shadow:0px 0px 10px #888888;}
 			a{
 				line-height: 0.5;
 				padding-right:25px;
@@ -169,6 +175,7 @@ body{
 		text-decoration: none;
 		&:hover{
 			text-decoration: none;
+			box-shadow:0px 0px 20px #888888;
 		}
 	}
 	}
@@ -183,64 +190,68 @@ body{
 			display:block;
 			text-size:30px;
 			transform:translate(95px, -92px);
-}
-}
-p{
+		}
+	}
+		p{
 	display:block;
 	transform:translate(96px, -93px);
 		}
-}
+	}
 
 }
 .client{
-	height:467px auto;
+	height:468px auto;
 	background-color:$header-color;
 	margin-top:-13px;
+	color:black;
+	h5{
+		color: $button-color-second;
+		margin-top: -10px;
+	}
+	p{
+		margin-top: -15px;
+	}
+	h3{
+		margin-bottom: 58px;
 
-	// .bigcircle{
-		.bigcircle1{
-			height: 132px;
-			width: 132px;
-			border-radius:50%;
-			float: right;
-			display: block;
-			background-color:$main-color;
-			margin-top: 197px;
+	}
+	.col-md-6{
+		margin-top: 70px;
+		.col-md-10{
 			p{
-				text-align: center;
-				color: white;
-				padding-top:45px;
+				font-family: 'Lobster Two', cursive;
 			}
-			&:last-child{
-				background-color:$button-color-second;
+		}
+	}
+
+	
+		.bigcircle{
+			background-color:red;
+			margin-top: 97px;
+			// margin-bottom: 108px;
+			.bigcircle1{
+				float: left;
+				padding-right:30px;
+				margin-bottom: 108px;
 			}
 		}
 	
 	.littlecircle{
-		margin-top: 250px;
-		float: right;
-		// display: inline-inline;
-		padding-top: 50px;
-		// background-color:red;
-		transform: translate(100px,50px);
+
+		margin-right: 10px;
 		.littlecircle1{
-			width: 12px;
-			height: 12px;
-			border-radius:50%;
-			background-color:$main-color;
-			
-			&:first-child{
-				background-color:$button-color-first;
-				
-				display: inline-block;
-			}
-		}
+			margin:0 auto;
+			float: left;
+			text-align: center;
+			transform: translate(15px, 10px)
 	}
+}
 }
 .features{
 	color:black;
 	height:662px auto;
 	border-bottom:1px solid #E5EEF0;
+	padding-top:72px;
 	.morefeatures{
 		margin-top: 62px;
 		margin-left: 40%;
@@ -258,6 +269,7 @@ p{
 		text-decoration: none;
 		&:hover{
 		text-decoration: none;
+		box-shadow:0px 0px 20px #888888;
 		}
 	}
 }
@@ -287,17 +299,38 @@ p{
 .pricing{
 	height:713px auto;
 	color:black;
-
+	padding-top:72px;
 	.boxes{
 
 		.qutu{
+			margin-bottom: 99px;
 			position:relative;
 			padding:0;
+			margin-top: 30px;
+			.clientmanagement{
+				padding-bottom: 48px;
+			}
+			span{
+				border-bottom:1px solid $button-color-second;
+				padding-bottom:6px;
+			}
+			h5{
+				padding:10px 0px 15px 0px;
+				font-size: 19px;
+				color: $font-color;
+			}
+			p{
+				color:$font-color;
+				font-size: 15px;
+				&:last-child {
+					color:white;
+				}
+			}
 			img{
 					position:absolute;
 					top:0;
 					left: 0;
-					z-index: -3;
+					z-index: 100;
 				}
 			&:nth-child(2){
 				
@@ -314,42 +347,60 @@ p{
 				margin: 0 auto;
 			}
 			height: 422px;
-			border:1px solid #E5EEF0;
+			border:1.3px solid #E5EEF0;
 			// padding-right: 31px;
 			&:last-child{
 				margin-right: 0;
 			}
 			h5{
 				border-bottom:1px solid #E5EEF0;
+				z-index: 100;
 			}
-			h2{z-index:2;
+			h3{z-index:2;
 				border-bottom:1px solid #E5EEF0;
+				padding-bottom:7px;
+				font-size: 20px;
+				font-weight: bold;
 			}
 			&:hover{
-				box-shadow:5px 5px 5px #888888;
+				box-shadow:0px 0px 20px #888888;
 			}
 		}
 	}
 }
 .team{
-	height:682px;
+	height:682px auto;
 	background-color:$header-color;
 	color:black;
+	padding-top:72px;
 	.teamboxes{
 		.teambox{
 			margin-bottom: 98px;
 			background-color:white;
 			height: 398px ;
 			&:hover{
-				box-shadow:5px 5px 5px #888888;
+				box-shadow:0px 0px 20px #888888;
 			}
 			p{
 				color: $button-color-second;
+				padding-left: 30px;
+				margin: 0;
+				margin-bottom: -17px;
+			}
+			h5{
+				padding-left: 30px;
+				padding-top:19px;
+				margin: 0;
+				margin-bottom: -17px;
+			}
+			img{
+				padding-left: 30px;
 			}
 			div{
 				h4{
 					text-align: center;
 					color:white;
+					padding-top: 121px;
 				}
 				height: 276px;
 				background-color:$font-color;
@@ -359,22 +410,30 @@ p{
 
 }
 .freeservice{
-	height:316px;
+	height:316px auto;
 	color:black;
 	border-bottom:1px solid #E5EEF0;
+	margin-top:72px;
+	span{
+		color:$button-color-second;
+	}
 	h1, h4{
 		text-align: center;
+	}
+	a{
+		color:white;
 	}
 	.button{
 		height: 38px;
 		float: center;
 		margin-top: 33px;
+		margin-bottom: 79px;
 		p{
 			padding:10px 20px;
 			text-align: center;
 			display: inline;
 			&:hover{
-				box-shadow:1px 1px 1px #888888;
+				box-shadow:0px 0px 10px #888888;
 			}
 			&:first-child{
 				padding:10px 40px;
@@ -394,8 +453,29 @@ p{
 	}
 }
 .contact{
+	.tricontactyellow{
+		// width: 0;
+		// height: 0;
+		// border-right:421px solid transparent;
+		// border-left:0px solid transparent;
+		// border-top:135px solid transparent;
+		// border-bottom:293px solid $button-color-second;
+		// float: left;
+		// padding-left:0;
+		// margin-top:89;
+		position: absolute;
+		margin-top: 87px;
+		z-index: -2;
+	}
+	input{
+		padding:8px 60px 10px 0px;;
+	}
+	padding:0;
 	border-bottom:1px solid #E5EEF0;
-	.col-md-2, .col-md-3{
+	position:relative;
+	.col-md-2, .col-md-3
+	{
+		z-index: 20;
 		margin-bottom: 85px;
 		margin-top: 75px;
 	}
@@ -409,4 +489,11 @@ p{
 	text-align:center;
 	font-size:14px;
 	margin-top:12px;
+	padding:0;
+	position:relative;
+	img{
+		text-align: right;
+		float: right;
+		margin-top: -240px;
+	}
 }
